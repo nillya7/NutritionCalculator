@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculatos</title>
+    </head>
+    <link rel="stylesheet" href="./style.css">
+        
+   <body>
+
+    <div id="BMI">
+    <div id="title">BMI Calculator</div>
+    <span id="label">Height:</span> <input type="number" id="height" placeholder="In Meters"> 
+    <span id="label">Weight:</span> <input type="number" id="weight" placeholder="In Kilograms"> 
+    <input type="submit" value="Calculate Your BMI" id="calculateBMI">
+
+    </div>
+
+    <hr style="width:50%;text-align:left;margin:20px">
+
+    <br>
+
+    <div id="PersonalDetails">
+        <div id="title">Personal Details</div>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="number" id="Name" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" id="dob" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <select id="gender">
+                        <option></option>
+                        <option value="female">Female</option>
+                        <option value="female">Male</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Weight:</td>
+                <td><input type="number" id="weight" placeholder="In Kilograms">  </td>
+            </tr>
+            <tr>
+                <td>Height:</td>
+                <td><input type="number" id="height" placeholder="In Meters"> </td>
+            </tr>
+            <tr>
+                <td>Waist Size:</td>
+                <td><input type="number" id="WaistSize" placeholder="In Centimeters"> </td>
+            </tr>
+            <tr>
+                <td>Neck Size:</td>
+                <td><input type="number" id="NeckSize" placeholder="In Centimeters"> </td>
+            </tr>
+            <!-- only for women-->
+            <tr id="Hip"> 
+                <td>Hip Size:</td>
+                <td><input type="number" id="HipSize" placeholder="In Centimeters"> </td>
+            </tr>
+            
+        </table>
+    </div>
+
+
+    <div id="ActivityStats">
+        <div id="title">Activity Details</div>
+            <table>
+                <tr>
+                    <td>Squat:</td>
+                    <td><input type="number" id="SquatKg" placeholder="Kg"></td>
+                    <td><input type="number" id="SquatResistances" placeholder="Resistances"></td>
+                </tr>
+                <tr>
+                    <td>Bench Press:</td>
+                    <td><input type="number" id="BenchPressKg" placeholder="Kg"></td>
+                    <td><input type="number" id="BenchPressResistances" placeholder="Resistances"></td>
+                </tr>
+                <tr>
+                    <td>Years of Expirience:</td>
+                    <td>
+                        <select id="YearsExpirience">
+                            <option></option>
+                            <option value="0to2years">0-2 years</option>
+                            <option value="2to5years">2-5 years</option>
+                            <option value="MoreThan5years">MoreThan5years</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Your Progress:</td>
+                    <td>
+                        <select id="YearsExpirience">
+                            <option></option>
+                            <option value="weeklyBasis">weekly Basis</option>
+                            <option value="MonthlyBasis">Monthly Basis</option>
+                            <option value="AlofMonthsToYears">A few months to even years</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Visual Changes are noticed:</td>
+                    <td>
+                        <select id="VisualChanges">
+                            <option></option>
+                            <option value="MonthlyBasis">Monthly Basis</option>
+                            <option value="AlofMonths">A few months</option>
+                            <option value="cannotSeen">Changes cannot be seen easily</option>
+                        </select>
+                    </td>
+                </tr>    
+            </table>
+    </div>
+    
+    <div id="Lifesyle">
+        <div id="title">Your Lifesyle</div>
+            <table>
+                <tr>
+                    <td>Your Lifesyle:
+                        <br>
+                        <span id="inputNote">Not related to physical activities</span>
+                    </td>
+                    <td>
+                        <select id="SelectLifesyle">
+                            <option></option>
+                            <option value="MainlySeated">Mainly Seated</option>
+                            <option value="MildActive">Mild Active</option>
+                            <option value="Active">Active</option>
+                            <option value="VeryActive">Very Active</option>
+                        </select>
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>Do you lift 3-6 times a week?</td>
+                    <td>
+                        <select id="lift">
+                            <option></option>
+                            <option value="liftYes">Yes</option>
+                            <option value="liftNo">No</option>
+                        </select>
+                    </td>  
+                </tr>
+                <tr>
+                    <td>How much steps you do a day?
+                        <br>
+                        <span id="inputNote">On average</span>
+                    </td>
+                    <td>
+                        <select id="spets">
+                            <option></option>
+                            <option value="LessThan6000">Less Than 6000 a day</option>
+                            <option value="MoreThan6000">More Than 6000 a day</option>
+                        </select>
+                    </td>  
+                </tr>       
+            </table>
+    </div>
+    
+    <div id="CulinaryPreferences">
+        <div id="title">Culinary Preferences</div>
+            <table>
+                <tr>
+                    <td>Percent of Colries from Fats:
+                        <br>
+                        <span id="inputNote">Not less than 20%</span>
+                    </td>
+                    <td><input type="number" id="PercentcaloriesFromFat" placeholder="25%"></td>                    
+                </tr>   
+            </table>
+    </div>
+   
+
+
+    <input type="submit" value="Do the Magic!" id="calculateBtn">
+   </body>
+   <script type="text/javascript" src="./app.js"></script>
+</html>
