@@ -7,24 +7,24 @@
         
    <body>
 
-    <div id="BMI">
+    <!-- <div id="BMI">
     <div id="title">BMI Calculator</div>
     <span id="label">Height:</span> <input type="number" id="height" placeholder="In Meters"> 
     <span id="label">Weight:</span> <input type="number" id="weight" placeholder="In Kilograms"> 
     <input type="submit" value="Calculate Your BMI" id="calculateBMI">
 
-    </div>
+    </div> -->
 
     <hr style="width:50%;text-align:left;margin:20px">
 
     <br>
 
     <div id="PersonalDetails">
-        <div id="title">Personal Details</div>
+        <h2 class="subTitle">Personal Details</h2>
         <table>
             <tr>
                 <td>Name:</td>
-                <td><input type="number" id="Name" placeholder=""></td>
+                <td><input type="text" id="Name" placeholder=""></td>
             </tr>
             <tr>
                 <td>Date of Birth:</td>
@@ -50,16 +50,16 @@
             </tr>
             <tr>
                 <td>Waist Size:</td>
-                <td><input type="number" id="WaistSize" placeholder="In Centimeters"> </td>
+                <td><input type="number" id="waistSize" placeholder="In Centimeters"> </td>
             </tr>
             <tr>
                 <td>Neck Size:</td>
-                <td><input type="number" id="NeckSize" placeholder="In Centimeters"> </td>
+                <td><input type="number" id="neckSize" placeholder="In Centimeters"> </td>
             </tr>
             <!-- only for women-->
             <tr id="Hip"> 
                 <td>Hip Size:</td>
-                <td><input type="number" id="HipSize" placeholder="In Centimeters"> </td>
+                <td><input type="number" id="hipSize" placeholder="In Centimeters"> </td>
             </tr>
             
         </table>
@@ -67,22 +67,22 @@
 
 
     <div id="ActivityStats">
-        <div id="title">Activity Details</div>
+        <h2 class="subTitle">Activity Details</h2>
             <table>
                 <tr>
                     <td>Squat:</td>
-                    <td><input type="number" id="SquatKg" placeholder="Kg"></td>
-                    <td><input type="number" id="SquatResistances" placeholder="Resistances"></td>
+                    <td><input type="number" id="squatKg" placeholder="Kg"></td>
+                    <td><input type="number" id="squatResistances" placeholder="Resistances"></td>
                 </tr>
                 <tr>
                     <td>Bench Press:</td>
-                    <td><input type="number" id="BenchPressKg" placeholder="Kg"></td>
-                    <td><input type="number" id="BenchPressResistances" placeholder="Resistances"></td>
+                    <td><input type="number" id="benchPressKg" placeholder="Kg"></td>
+                    <td><input type="number" id="benchPressResistances" placeholder="Resistances"></td>
                 </tr>
                 <tr>
                     <td>Years of Expirience:</td>
                     <td>
-                        <select id="YearsExpirience">
+                        <select id="yearsExpirience">
                             <option></option>
                             <option value="0to2years">0-2 years</option>
                             <option value="2to5years">2-5 years</option>
@@ -93,7 +93,7 @@
                 <tr>
                     <td>Your Progress:</td>
                     <td>
-                        <select id="YearsExpirience">
+                        <select id="yourProgress">
                             <option></option>
                             <option value="weeklyBasis">weekly Basis</option>
                             <option value="MonthlyBasis">Monthly Basis</option>
@@ -104,7 +104,7 @@
                 <tr>
                     <td>Visual Changes are noticed:</td>
                     <td>
-                        <select id="VisualChanges">
+                        <select id="visualChanges">
                             <option></option>
                             <option value="MonthlyBasis">Monthly Basis</option>
                             <option value="AlofMonths">A few months</option>
@@ -116,7 +116,7 @@
     </div>
     
     <div id="Lifesyle">
-        <div id="title">Your Lifesyle</div>
+        <h2 class="subTitle">Your Lifesyle</h2>
             <table>
                 <tr>
                     <td>Your Lifesyle:
@@ -124,7 +124,7 @@
                         <span id="inputNote">Not related to physical activities</span>
                     </td>
                     <td>
-                        <select id="SelectLifesyle">
+                        <select id="selectLifesyle">
                             <option></option>
                             <option value="MainlySeated">Mainly Seated</option>
                             <option value="MildActive">Mild Active</option>
@@ -160,14 +160,35 @@
     </div>
     
     <div id="CulinaryPreferences">
-        <div id="title">Culinary Preferences</div>
+        <h2 class="subTitle">Culinary Preferences</h2>
             <table>
                 <tr>
                     <td>Percent of Colries from Fats:
                         <br>
                         <span id="inputNote">Not less than 20%</span>
                     </td>
-                    <td><input type="number" id="PercentcaloriesFromFat" placeholder="25%"></td>                    
+                    <td><input type="number" id="percentCaloriesFromFat" placeholder="25%"></td>                    
+                </tr>   
+            </table>
+    </div>
+
+    <div id="goal">
+        <h2 class="subTitle">What's your goal?</h2>
+            <table>
+                <tr>
+                    <td>Goal:
+                        <br>
+                        <span id="inputNote"></span>
+                    </td>
+                    <td>
+                        <select id="goalSelect">
+                            <option></option>
+                            <option value="gainLeanBodyMass">Gain lean body mass</option>
+                            <option value="reduceBodyFat">Reduce body fat</option>
+                            <option value="recomposition">Recomposition: reduce fat and gain muscles</option>
+                            <option value="stayAsIAm">Stay as I am</option>
+                        </select>
+                    </td>                    
                 </tr>   
             </table>
     </div>

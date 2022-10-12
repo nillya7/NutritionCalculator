@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#inputNote {
+    font-size: 12px;
+}
+
+td {
+    padding-bottom: 10px 20px;
+}
